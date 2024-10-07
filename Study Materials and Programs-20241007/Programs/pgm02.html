@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <p>Changing HTML attribute values using JavaScript.</p>
+
+    <p>value of the src (source) attribute of an image is modified here.</p>
+
+    <p>
+        <div style="float:left">
+            <button onclick="document.getElementById('main').style.display='block'">ACTIVATE</button>
+        </div>
+
+        <div style="float:right">
+            <button onclick="document.getElementById('main').style.display='none'">DEACTIVATE</button>
+        </div>
+    </p>
+
+    <div id="main" style="display: none;">
+   
+        <div style="text-align:center;">
+            <img id="myImage" src="images/im1.webp" style="width:400px;">
+        </div>
+
+        <p>
+            <div style="float:left">
+                <button onclick="document.getElementById('myImage').src='images/im1.webp'">I AM IRON MAN</button>
+            </div>
+            <div style="text-align:center;">
+                <button onclick="document.getElementById('myImage').src='images/im2.webp'">MERRY CHRISTMAS JARVIS</button>
+            </div>
+            <div style="float:right">
+                <button onclick="document.getElementById('myImage').src='images/im3.webp'">THE REAL IRON MAN</button>
+            </div>
+        </p>
+    </div>
+
+    <br>
+    
+</body>
+
+</html>

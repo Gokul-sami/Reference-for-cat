@@ -1,0 +1,35 @@
+<!-- Specificity is the algorithm that the browser uses to decide which property value is applied to an element. 
+    If multiple style blocks have different selectors that configure the same property with different values and 
+    target the same element, specificity decides the property value that gets applied to the element. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Specificity</title>
+    <style type="text/css">
+        body {
+            color: grey;
+        }
+        .main-heading {
+            color: red;
+        }
+        .main-heading-2 {
+            color: red;
+        }
+        h1 {
+            color: blue;
+        }
+        #sub-heading {
+            color:green;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> First H1 heading.</h1>
+    <h1 class="main-heading-2">Second H1 heading.</h1>
+    <h1 class="main-heading" id="sub-heading">Third H1 heading.</h1>
+</body>
+
+</html>

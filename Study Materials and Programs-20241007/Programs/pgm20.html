@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <title>JSON Example 3</title>
+    <body>
+
+        <h2>Creation of JSON Array Objects</h2>
+
+        <p id="d1"></p>
+        <p id="d2"></p>
+
+        <script language = "javascript" >
+            var books = {   "Maths" : 
+                            [ {"Name":"Engg Maths 1","price":200 },{"Name":"Discrete Maths","price":400}],  
+                   
+                            "Physics" : 
+                            [ {"Name":"Physics for Information","price":1000},{"Name":"Physics - Engineers","price":300}]    
+                        }    
+            var i = 0;
+            document.writeln("<table border = '1'><tr>");
+               
+            for(i = 0;i<books.Maths.length;i++) 
+            {	
+               document.writeln("<td>");
+               document.writeln("<table>");
+               document.writeln("<tr><td><b>Name</b></td><td width = 100>" + books.Maths[i].Name+"</td></tr>");
+               document.writeln("<tr><td><b>Price</b></td><td width = 100>" + books.Maths[i].price +"</td></tr>");
+               document.writeln("</table>");
+               document.writeln("</td>");
+            }
+            document.writeln("</tr>");
+            document.writeln("<tr>");
+   
+            for(i = 0;i<books.Physics.length;i++) 
+            {
+               document.writeln("<td>");
+               document.writeln("<table");
+               document.writeln("<tr><td><b>Name</b></td><td width = 200>" + books.Physics[i].Name+"</td></tr>");
+               document.writeln("<tr><td><b>Price</b></td><td width = 100>" + books.Physics[i].price+"</td></tr>");
+               document.writeln("</table>");
+               document.writeln("</td>");
+            }
+               
+            document.writeln("</tr></table>");
+         </script>
+
+    </body>
+</html>

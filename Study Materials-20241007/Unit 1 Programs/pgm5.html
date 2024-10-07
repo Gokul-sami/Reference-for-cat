@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form elements</title>
+</head>
+
+<body>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br><br>
+        <!-- <input type="submit" value="Submit"> -->
+
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="merc">Merc</option> <!--selected, size, multiple-->
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+        <br><br>
+
+        <textarea name="message" rows="10" cols="30">
+            This class is TOO HOT!
+        </textarea>
+        <br><br>
+
+        <button type="button" onclick="alert('Hello CSE!')">Press Me!</button>
+        <!-- <input type="button" value="Click Me" onclick="alert('hei CSE')"> -->
+        <input type="submit" value="Submit">
+        <br><br>
+
+        <fieldset>
+            <legend>Personal Details:</legend>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="Henry"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Jane"><br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+        <br><br>
+
+        <label for="courses">Choose your favorite course from the list:</label>
+        <input list="courses">
+        <datalist id="courses">
+            <option value="Java">
+            <option value="C++">
+            <option value="Python">
+            <option value="DSA">
+            <option value="ML and AI">
+        </datalist>
+        <input type="submit">
+
+    </form>
+
+    <br><br>    
+    <form action="#" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        
+        <input type="range" min="100" max="200" id="a" value="150">
+        <!-- 50 + -->+
+        <input type="number" id="b" value="50">
+        =
+        <output id="x" for="a b">000</output><br>
+        <input type="submit">
+    </form>
+
+
+</body>
+
+</html>

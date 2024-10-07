@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- Programmer-defined function square. -->
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>A Programmer-Defined Functions and Predefined Functions</title>
+        <style type = "text/css">
+            p { margin: 0; }
+        </style>
+        <script>
+
+            document.writeln( "<h1>Square the numbers from 1 to 10</h1>" );
+
+            // square the numbers from 1 to 10
+            for ( var x = 1; x <= 10; ++x )
+            document.writeln( "<p>The square of " + x + " is " + square(x) + "</p>" );
+
+            document.writeln( "<p>The maximum of 10, 43 & 23 " + x + " is " + maximum(10,43,23) + "</p>" );
+        
+            function square( y )
+            {
+                return y * y;
+            } // end function square
+
+            function maximum( x, y, z )
+            {
+                return Math.max( x, Math.max( y, z ) );
+            } // end function maximum
+
+        </script>
+    </head>
+    <body></body> <!-- empty body element -->
+</html>

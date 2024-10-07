@@ -1,0 +1,15 @@
+/* The Cascading Order in CSS is a set of rules that determine 
+which style will be applied to an element when multiple styles are conflicting. */
+
+/* The term “cascading” refers to the way that styles are inherited 
+and applied to elements in a web page. */
+
+/* More specific styles take precedence over more general styles. */
+
+/* Three main cascading methods are:
+- Specificity
+- Inheritance
+- Order of declaration */
+
+/* Cascade and the closely-related concept of specificity are mechanisms 
+that control which rule applies when there is such a conflict. */
